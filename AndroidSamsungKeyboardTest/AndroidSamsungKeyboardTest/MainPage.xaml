@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndroidSamsungKeyboardTest.MainPage"
+             Title="Keyboard Entry Test"
+             HideSoftInputOnTapped="True">
+
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout Padding="20,30,20,40"
+                                 Spacing="18">
+
+                <Label Text="Keyboard and Text Entry Test"
+                       FontSize="24"
+                       FontAttributes="Bold" />
+
+                <Label Text="Use this page to test focus navigation, keyboard behavior, and scroll adjustments."
+                       FontSize="14"
+                       TextColor="Gray" />
+
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="First Name" />
+                    <Entry Placeholder="Enter first name"
+                           ReturnType="Next"
+                           ClearButtonVisibility="WhileEditing" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Last Name" />
+                    <Entry Placeholder="Enter last name"
+                           ReturnType="Next"
+                           ClearButtonVisibility="WhileEditing" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Email" />
+                    <Entry Placeholder="Enter email"
+                           Keyboard="Email"
+                           ReturnType="Next"
+                           ClearButtonVisibility="WhileEditing" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Phone" />
+                    <Entry Placeholder="Enter phone number"
+                           Keyboard="Telephone"
+                           ReturnType="Next"
+                           ClearButtonVisibility="WhileEditing" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Address Line 1" />
+                    <Entry Placeholder="Street address"
+                           ReturnType="Next"
+                           ClearButtonVisibility="WhileEditing" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Address Line 2" />
+                    <Entry Placeholder="Apartment, suite, unit, etc."
+                           ReturnType="Next"
+                           ClearButtonVisibility="WhileEditing" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="City" />
+                    <Entry Placeholder="Enter city"
+                           ReturnType="Next"
+                           ClearButtonVisibility="WhileEditing" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Notes" />
+                    <Entry Placeholder="Additional notes"
+                           ReturnType="Done"
+                           ClearButtonVisibility="WhileEditing" />
+                </VerticalStackLayout>
+
+                <Label Text="Tap the open area below to dismiss keyboard"
+                       FontSize="13"
+                       TextColor="Gray" />
+
+                <BoxView HeightRequest="220"
+                         Opacity="0" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Button Text="Overlay Action"
+                VerticalOptions="End"
+                HorizontalOptions="Fill"
+                Margin="20,0,20,20"
+                HeightRequest="52"
+                ZIndex="10" />
+    </Grid>
+
+</ContentPage>
