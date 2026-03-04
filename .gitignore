@@ -1,0 +1,27 @@
+# Build output
+**/[Bb]in/
+**/[Oo]bj/
+*.user
+*.suo
+*.userprefs
+*.unsuccessfulbuild
+*.cache
+*.ide
+.vs/
+.idea/
+.gradle/
+.gradle/
+*.iml
+
+# Android/.NET MAUI specifics
+*.apk
+*.ap_
+*.aab
+*.ds_store
+**/android/**/bin/
+**/android/**/gen/
+
+# Logs/temp
+*.log
+*.tlog
+*.tmp
